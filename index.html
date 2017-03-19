@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>FE-4 Slider</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="JS/jquery-3.2.0.min.js"></script>
+        <script src="JS/jquery.cycle2.min.js"></script>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+
+
+
+    <body>
+    <div id="container">
+        <div id="slideshow" class="cycle-slideshow"
+        data-cycle-fx="fade"
+        data-cycle-speed="600"
+        data-cycle-timeout="3000"
+        data-cycle-pager="#pager"
+        data-cycle-pager-template="<a href='#'><img src='{{src}}' height=100 width=150></a>"
+        data-cycle-next="#next"
+        data-cycle-prev="#prev"
+        data-cycle-manual-fx="scrollHorz"
+        data-cycle-manual-speed="400"
+        data-cycle-pager-fx="fade">
+            <img src="img/1.jpg" alt="1">
+            <img src="img/2.jpg" alt="2">
+            <img src="img/3.jpg" alt="3">
+            <img src="img/4.jpg" alt="4">
+            <img src="img/5.jpg" alt="5">
+        </div>
+
+        <div id="pager"></div>
+
+        <img id="prev" src="img/previous.svg" alt="left arrow">
+        <img id="next" src="img/next.svg" alt="right arrow">
+
+    </div>
+    </body>
+
+</html>
